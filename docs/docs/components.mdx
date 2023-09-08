@@ -340,8 +340,8 @@ modeling hierarchical intent structure, use the following flags with any tokeniz
 
 Text featurizers are divided into two different categories: sparse featurizers and dense featurizers.
 Sparse featurizers are featurizers that return feature vectors with a lot of missing values, e.g. zeros.
-As those feature vectors would normally take up a lot of memory, we store them as sparse features.
-Sparse features only store the values that are non zero and their positions in the vector.
+As those feature vectors would normally take up a lot of memory, we store them as dense features.
+Dense features only store the values that are non zero and their positions in the vector.
 Thus, we save a lot of memory and are able to train on larger datasets.
 
 All featurizers can return two different kind of features: sequence features and sentence features.
